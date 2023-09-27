@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         displayTextView = findViewById(R.id.displayTextView)
         nameEditText = findViewById(R.id.nameEditText)
         clickMeButton = findViewById(R.id.clickMeButton)
-        
-        findViewById<Button>(R.id.clickMeButton).setOnClickListener {
+
+        clickMeButton.setOnClickListener {
             val text = nameEditText.text.toString()
             if (text.isEmpty()) {
                 nameEditText.setError("Please Enter Your Name!")
